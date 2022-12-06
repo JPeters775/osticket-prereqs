@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 <p>
-Before we begin, here is a link to the files you will need in order to install osTicket. I will be refering to them in the tutorial.
+Before we begin, here is a link to the files you will need in order to install osTicket. I will be refering to this in the tutorial.
 
 Link: https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 </p>
