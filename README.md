@@ -107,7 +107,73 @@ Once this is finished, go back to osTicket webpage, refresh and observe the chan
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
 
+<h3>Assigning Permissions</h3>
+
+<p>
+We need to rename a php file. Go to the "osTicket" folder, then the "include" folder. Inside the "include" folder, there will be a file named "ost-sampleconfig.php". Rename that folder to "ost-config.php".
+
+Now, we will assign the permissions. Right click "ost-config.php" and click on Properties. Next, go to Security, then Advanced. Disable inheritances and remove all inheritances. Then, click Add to add new permissions. Click select a principal. Enter object name as "Everyone" to create the principal. Now, allow "Everyone" all of the permissions listed. Click OK and you are finished with this step. 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Continue Setting up osTicket in the browser</h3>
+
+<p>
+Go back to the osTicket browser and click "Continue". You will now be able to set up the Helpdesk name, email and data base. For now, create the name and email (this can be made-up).
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Download and Install HeidiSQL</h3>
+
+<p>
+Download and install HeidiSQL from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. After it is installed and downloaded, create a new session using the name and password we used earlier in the Web Platform Installer (Name=root Password=Password1). Connect to the session and create the database by right clicking the "Unnamed" folder on the left and then clicking "Create new database". Make sure to call it "osticket".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Continue Setting up osTicket</h3>
+
+<p>
+Go back to the web browser and finish completing the Basic Installation information. Create a username, password and email address for osTicket. Make sure you remember this for later use. Enter osTicket as the SQL database we just created and the username and password for the database (root/password1). You can now click "Install Now". You should now see a congratulations screen if it installed successfully with no errors.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Last Step Before Starting</h3>
+
+<p>
+We will need to delete a file before continuing. Got the "osTicket" folder and delete the setup folder. You may need to go in the folder and delete all files before deleting the folder itself.
+
+Next, go to "ost-config.php" file we changed earlier. Set the permissions from All permissions allowed to "Read" only.
+
+Finally, we can now use osTicket.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>In Conclusion</h3>
+
+<p>
+You can now login to osTicket using the username and password you created during the installation process. To login in to your helpdesk, go to http://localhost/osTicket/scp/login.php. End users can go to http://localhost/osTicket/ to submit their tickets. 
+
+Thank you for reading my guide! I hope this helped you.
 </p>
 <br />
