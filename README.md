@@ -67,24 +67,40 @@ There will be programs that failed to install. They will be in the installation 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h3>Install osTicket</h3>
+
 <p>
-Download osTicket from the link. Extract the osTicket folder. Inside the osTicket folder find the "upload" folder. Copy the "upload" folder. Paste it into "c:\inetpub\wwwroot". Now, rename that copied "upload" folder to "osTicket"
+Download osTicket from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Extract the osTicket folder. Inside the osTicket folder find the "upload" folder. Copy the "upload" folder. Paste it into "c:\inetpub\wwwroot". Now, rename that copied "upload" folder to "osTicket"
 </p>
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h3>Open IIS, Stop and Start the server</h3>
+
 <p>
- 
+Open the IIS application. On the leftside of the IIS, you will see the pulldown with the name of your VM. Go to "Sites" -> "Default Web Site -> osTicket.
+
+Next, on the right of the screen, click "Browse *:80”. This will bring you to the webpage of osTicket. You will see that a few extensions are needed to continue. We'll go over that next.
 </p>
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
 
+<h3>Enable Extensions in IIS</h3>
+
+<p>
+Go back to IIS and the osTicket folder. Now, double-click PHP Manager, then click "Enable of disable an extension". Enable these extensions:
+- php_imap.dll
+- php_intl.dll
+- php_opcache.dll
+
+Once this is finished, go back to osTicket webpage, refresh and observe the changes. You should see that Intl Extension now has a green checkmark.
 </p>
 <br />
 
