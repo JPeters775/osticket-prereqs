@@ -30,7 +30,7 @@ Before we begin, here is a link to the files you will need in order to install o
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NUnaVEq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Create Virtual Machine in Azure</h3>
@@ -41,7 +41,7 @@ Create a Resource Group and create a Virtual Machine (VM) with 2-4 Virtual CPUs.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/e73100y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Install/Enable Internet Installation Services (IIS)</h3>
@@ -52,7 +52,7 @@ Connect to your VM with Remote Desktop. Once you are in, install and enable Inte
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OOP2bV4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Install Web Platform Installer</h3>
@@ -65,7 +65,7 @@ There will be programs that failed to install. They will be in the installation 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CiHsqQb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Install osTicket</h3>
@@ -76,7 +76,7 @@ Download osTicket from this <a href="https://drive.google.com/drive/u/1/folders/
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GmA0emx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Open IIS, Stop and Start the server</h3>
@@ -89,7 +89,7 @@ Next, on the right of the screen, click "Browse *:80”. This will bring you to 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bAnjFrF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Enable Extensions in IIS</h3>
@@ -105,20 +105,24 @@ Once this is finished, go back to osTicket webpage, refresh and observe the chan
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qcUOyg3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Assigning Permissions</h3>
 
 <p>
 We need to rename a php file. Go to the "osTicket" folder, then the "include" folder. Inside the "include" folder, there will be a file named "ost-sampleconfig.php". Rename that folder to "ost-config.php".
+  
+<p>
+<img src="https://i.imgur.com/jsAiLmL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
 Now, we will assign the permissions. Right click "ost-config.php" and click on Properties. Next, go to Security, then Advanced. Disable inheritances and remove all inheritances. Then, click Add to add new permissions. Click select a principal. Enter object name as "Everyone" to create the principal. Now, allow "Everyone" all of the permissions listed. Click OK and you are finished with this step. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/sk0aE91.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Continue Setting up osTicket in the browser</h3>
@@ -129,7 +133,7 @@ Go back to the osTicket browser and click "Continue". You will now be able to se
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/d2RVWUN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Download and Install HeidiSQL</h3>
@@ -140,7 +144,7 @@ Download and install HeidiSQL from this <a href="https://drive.google.com/drive/
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QnAlBvX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Continue Setting up osTicket</h3>
@@ -151,7 +155,7 @@ Go back to the web browser and finish completing the Basic Installation informat
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qcUOyg3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Last Step Before Starting</h3>
@@ -166,7 +170,7 @@ Finally, we can now use osTicket.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/55XeXSc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>In Conclusion</h3>
