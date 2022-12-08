@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 <p>
-Before we begin, here is a link to the files you will need in order to install osTicket. I will be refering to this in the tutorial.
+Before you begin, here is a link to the files you will need in order to install osTicket. You will be refering back to these files during the tutorial.
 
 <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> Installation Files for osTicket</a>
 </p>
@@ -36,7 +36,7 @@ Before we begin, here is a link to the files you will need in order to install o
 <h3>Create Virtual Machine in Azure</h3>
 
 <p>
-Create a Resource Group and create a Virtual Machine (VM) with 2-4 Virtual CPUs. I used Windows 10 as my operating system. Make sure to allow the VM to create a new Virtual Network (Vnet). 
+Create a Resource Group and create a Virtual Machine (VM) with 2-4 Virtual CPUs. Choose Windows 10 as your operating system. Make sure to allow the VM to create a new Virtual Network (Vnet). 
 </p>
 <br />
 
@@ -47,7 +47,7 @@ Create a Resource Group and create a Virtual Machine (VM) with 2-4 Virtual CPUs.
 <h3>Install/Enable Internet Installation Services (IIS)</h3>
 
 <p>
-Connect to your VM with Remote Desktop. Once you are in, install and enable Internet Information Services (IIS). To do this, go to your Control Panel, then click on "Uninstall or change programs". From here, click on "Turn Windows features on or off" on the left side of the screen. Scroll down to IIS and check the box next to it. Now click OK. Now you can install IIS.
+Connect to the VM with Remote Desktop. Once you are in, install and enable Internet Information Services (IIS). To do this, go to your Control Panel, then click on "Uninstall or change programs". From here, click on "Turn Windows features on or off" on the left side of the screen. Scroll down to IIS and check the box next to it. Now click OK. Now you can install IIS.
 </p>
 <br />
 
@@ -58,9 +58,9 @@ Connect to your VM with Remote Desktop. Once you are in, install and enable Inte
 <h3>Install Web Platform Installer</h3>
 
 <p>
-Install Web Platform Installer from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Once installed, add the programs listed in the photo above. When you add MySQL 5.5, it will ask you for credential to be created later. I used "root" as the name and "Password1" as the password.
+Install Web Platform Installer from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Once installed, add the programs listed in the photo above. When you add MySQL 5.5, it will ask you for credential to be created later. I suggest using "root" as the name and "Password1" as the password. Any password will work. This will be deleted later so a simple, easy to remember password is fine for this tutorial.
 
-There will be programs that failed to install. They will be in the installation files <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. The files you want to install are PHP Version 7.3.8, PHP Manager 1.5.0 for IIS 10 and Microsoft Visual C++ 2009 Redistributable Package(vcredist_x86.exe). 
+There will be programs that failed to install. The files you need will be in the installation files <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. The files you need to install are PHP Version 7.3.8, PHP Manager 1.5.0 for IIS 10 and Microsoft Visual C++ 2009 Redistributable Package(vcredist_x86.exe). 
 </p>
 <br />
 
@@ -71,7 +71,7 @@ There will be programs that failed to install. They will be in the installation 
 <h3>Install osTicket</h3>
 
 <p>
-Download osTicket from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Extract the osTicket folder. Inside the osTicket folder find the "upload" folder. Copy the "upload" folder. Paste it into "c:\inetpub\wwwroot". Now, rename that copied "upload" folder to "osTicket"
+Download osTicket from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Extract the osTicket folder. Inside the osTicket folder, find the "upload" folder. Copy the "upload" folder. Paste it into "c:\inetpub\wwwroot". Now, rename that copied "upload" folder to "osTicket"
 </p>
 <br />
 
@@ -84,7 +84,7 @@ Download osTicket from this <a href="https://drive.google.com/drive/u/1/folders/
 <p>
 Open the IIS application. On the leftside of the IIS, you will see the pulldown with the name of your VM. Go to "Sites" -> "Default Web Site -> osTicket.
 
-Next, on the right of the screen, click "Browse *:80”. This will bring you to the webpage of osTicket. You will see that a few extensions are needed to continue. We'll go over that next.
+Next, on the right of the screen, click "Browse *:80”. This will bring you to the webpage of osTicket. You will see that a few extensions are needed to continue. You'll go over that next.
 </p>
 <br />
 
@@ -111,13 +111,13 @@ Once this is finished, go back to osTicket webpage, refresh and observe the chan
 <h3>Assigning Permissions</h3>
 
 <p>
-We need to rename a php file. Go to the "osTicket" folder, then the "include" folder. Inside the "include" folder, there will be a file named "ost-sampleconfig.php". Rename that folder to "ost-config.php".
+You'll need to rename a php file. Go to the "osTicket" folder, then the "include" folder. Inside the "include" folder, there will be a file named "ost-sampleconfig.php". Rename that folder to "ost-config.php".
   
 <p>
 <img src="https://i.imgur.com/jsAiLmL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Now, we will assign the permissions. Right click "ost-config.php" and click on Properties. Next, go to Security, then Advanced. Disable inheritances and remove all inheritances. Then, click Add to add new permissions. Click select a principal. Enter object name as "Everyone" to create the principal. Now, allow "Everyone" all of the permissions listed. Click OK and you are finished with this step. 
+Now, you will assign the permissions. Right click "ost-config.php" and click on Properties. Next, go to Security, then Advanced. Disable inheritances and remove all inheritances. Then, click Add to add new permissions. Click select a principal. Enter object name as "Everyone" to create the principal. Now, allow "Everyone" all of the permissions listed. Click OK and you are finished with this step. 
 </p>
 <br />
 
@@ -128,7 +128,7 @@ Now, we will assign the permissions. Right click "ost-config.php" and click on P
 <h3>Continue Setting up osTicket in the browser</h3>
 
 <p>
-Go back to the osTicket browser and click "Continue". You will now be able to set up the Helpdesk name, email and data base. For now, create the name and email (this can be made-up).
+Go back to the osTicket browser and click "Continue". You will now be able to set up the Helpdesk name, email and data base. For now, create the name and email.
 </p>
 <br />
 
@@ -139,7 +139,7 @@ Go back to the osTicket browser and click "Continue". You will now be able to se
 <h3>Download and Install HeidiSQL</h3>
 
 <p>
-Download and install HeidiSQL from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. After it is installed and downloaded, create a new session using the name and password we used earlier in the Web Platform Installer (Name=root Password=Password1). Connect to the session and create the database by right clicking the "Unnamed" folder on the left and then clicking "Create new database". Make sure to call it "osticket".
+Download and install HeidiSQL from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. After it is installed and downloaded, create a new session using the name and password you used earlier in the Web Platform Installer (Name=root Password=Password1). Connect to the session and create the database by right clicking the "Unnamed" folder on the left and then clicking "Create new database". Make sure to call it "osticket".
 </p>
 <br />
 
@@ -150,7 +150,7 @@ Download and install HeidiSQL from this <a href="https://drive.google.com/drive/
 <h3>Continue Setting up osTicket</h3>
 
 <p>
-Go back to the web browser and finish completing the Basic Installation information. Create a username, password and email address for osTicket. Make sure you remember this for later use. Enter osTicket as the SQL database we just created and the username and password for the database (root/password1). You can now click "Install Now". You should now see a congratulations screen if it installed successfully with no errors.
+Go back to the web browser and finish completing the Basic Installation information. Create a username, password and email address for osTicket. Make sure you remember this for later use. Enter osTicket as the SQL database you just created and the username and password for the database (root/password1). You can now click "Install Now". You should now see a congratulations screen if it installed successfully with no errors.
 </p>
 <br />
 
@@ -161,11 +161,11 @@ Go back to the web browser and finish completing the Basic Installation informat
 <h3>Last Step Before Starting</h3>
 
 <p>
-We will need to delete a file before continuing. Got the "osTicket" folder and delete the setup folder. You may need to go in the folder and delete all files before deleting the folder itself.
+You will need to delete a file before continuing. Got the "osTicket" folder and delete the setup folder. You may need to go in the folder and delete all files before deleting the folder itself.
 
 Next, go to "ost-config.php" file we changed earlier. Set the permissions from All permissions allowed to "Read" only.
 
-Finally, we can now use osTicket.
+Finally, you can now use osTicket.
 </p>
 <br />
 
