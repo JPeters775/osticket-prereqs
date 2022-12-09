@@ -20,7 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Microsoft Azure Account
 - Active Microsoft Azure Subscription
-- osTicket installation software
+- osTicket Installation Software
 
 <h2>Installation Steps</h2>
 <p>
