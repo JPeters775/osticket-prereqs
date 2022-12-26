@@ -58,7 +58,7 @@ Connect to the VM with Remote Desktop. Once you are in, install and enable Inter
 <h3>Install Web Platform Installer</h3>
 
 <p>
-Install Web Platform Installer from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Once installed, add the programs listed in the photo above. When you add MySQL 5.5, it will ask you for credential to be created later. I suggest using "root" as the name and "Password1" as the password. Any password will work. This will be deleted later so a simple, easy to remember password is fine for this tutorial.
+Install Web Platform Installer from this <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. Once installed, add the programs listed in the photo above. When you add MySQL 5.5, it will ask you for credential to be created later. I suggest using "root" as the name and "Password1" as the password. Any password will work. This will be deleted later so a simple, easy to remember password is fine for this tutorial. Next, add all simple versions of x89 PHP up until 7.3.
 
 There will be programs that failed to install. The files you need will be in the installation files <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> link</a>. The files you need to install are PHP Version 7.3.8, PHP Manager 1.5.0 for IIS 10 and Microsoft Visual C++ 2009 Redistributable Package(vcredist_x86.exe). 
 </p>
